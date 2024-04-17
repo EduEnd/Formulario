@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/*Configurando o formato body e deixando responsivo o tamanho das fontes*/
+body {
+    background-color: white;
+    font-size: 16px; 
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; 
+    }
+}
+
+/*Deixando a tela principal formatada com suas propriedades e responsiva*/
+.principal {
+    width: 90%;
+    max-width: 500px;
+    margin: 2% auto; 
+    background-color: #768AA8;
+    background-size: cover;
+    background-position: right, left;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 850px) {
+    .principal {
+        margin-left: 0;
+    }
+}
+
+/*Editandoo todas as box com seus formatos e propriedades de  tamanho e posição*/
+.box {
+    width: 90%; 
+    max-width: 350px; 
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: -1%;
+    white-space: nowrap;
+    margin-bottom: 4%;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+/*cor do input e seu tamanho na tela*/
+.box input {
+    width: 180%; 
+    height: 35px;
+    background-color: #BEBEBE;
+    border-radius: 10px;
+
+}
+
+/*Titulos e suas propridades de cores e tamanhos*/
+h1 {
+    color: white;
+    margin-top: 5%;
+    margin-left: 20%; 
+    margin-bottom: 3%;
+    font-size: 3vw; 
+    font-family: "Radio Canada", sans-serif;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
+}
+
+h2 {
+    color: white;
+    margin-top: 3%;
+    margin-left: 15%; 
+    margin-bottom: 3%;
+    font-size: 2vw; 
+    font-family: "Radio Canada", sans-serif;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
+}
+
+/*Formato e propriedades de cores, tamanho e posicão do butão de concluir, da tag ancor*/
+.concluir {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #3F4040; 
+    width: 310px; 
+    height: 35px; 
+    border-radius: 10px; 
+    margin-bottom: 4%; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.concluir a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.concluir button {
+    background-color: transparent; 
+    border: none; 
+    color: white; 
+    font-family: "Poppins", sans-serif; 
+    font-size: 17px;
+    cursor: pointer; 
+    width: 100%;
+    height: 100%; 
+}
+
+/*padrão dos parágrafos*/
+p {
+    font-size: 1vw; 
+    color: #040404;
+    font-family: "Poppins", sans-serif;
+    margin-left: 15%;
+    font-weight: 600;
+}
+
+/*Formato de todos os id que começam com valor_form*/
+[id^="valor_form"] {
+    font-weight: 600;
+    font-size: 1.5vw; 
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin-left: 15%;
+}

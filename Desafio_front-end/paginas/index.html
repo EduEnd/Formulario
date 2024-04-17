@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <!--tela principal no centro de todo background-->
+    <div class="principal">
+        <h1>Cadastre-se</h1>
+        <!--classe box para que todas a box do formulario tenha os mesmo parámetros-->
+        <div class="box">
+            <!--class input para padronizar todos os input-->
+            <form class="input">
+                <!--inputs onde receberam os dados dinamicos usuario para passar para proxima pagina-->
+                <input type="text" name="form_name" id="form_name_usuario" placeholder="   Nome completo:">
+            </form>
+        </div>
+        <div class="box">
+            <form class="input">
+                <input type="email" name="form_email" id="form_email_usuario" placeholder="   Email:">
+            </form>
+        </div>
+        <div class="box">
+            <form class="input">
+                <input type="text" name="form_telefone" id="form_telefone_usuario" placeholder="   Telefone:">
+            </form>
+        </div>
+        <div class="box">
+            <form class="input">
+                <input type="date" name="form_nascimento" id="form_nascimento_usuario" placeholder="   Nascimento:">
+            </form>
+        </div>
+        <h2>Endereço</h2>
+        <div class="box">
+            <form class="input">
+                <input type="text" name="form_cep" id="form_cep_usuario" placeholder="   CEP:">
+            </form>
+        </div>
+        <div class="box">
+            <form class="input">
+                <input type="text" name="form_logradouro" id="form_logradouro_usuario" placeholder="   Logradouro:">
+            </form>
+        </div>
+        <div class="box">
+            <form class="input">
+                <input type="text" name="form_numResidencia" id="form_numResidencia_usuario" placeholder="   N° da residência:">
+            </form>
+        </div>
+        <div class="box">
+            <form class="input">
+                <input type="text" name="form_bairro" id="form_bairro_usuario" placeholder="   Bairro:">
+            </form>
+        </div>
+        <div class="box">
+            <form class="input">
+                <input type="text" name="form_estado" id="form_estado_usuario" placeholder="   Estado:">
+            </form>
+        </div>
+        <div class="box">
+            <form class="input">
+                <input type="text" name="form_cidade" id="form_cidade_usuario" placeholder="   Cidade:">
+            </form>
+        </div>
+        <!--Botão que vai chamar a função do js e trocar as paginas-->
+        <div class="concluir">
+            <a href="../paginas/dados_usuario.html" target="_self"  onclick="receberNomeUsuario()">
+                <button type="button">concluir</button>
+            </a>
+        </div>
+    </div>
+    <script src="../script/script.js"></script>
+</body>
+</html>
